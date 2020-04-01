@@ -645,7 +645,7 @@ parse_arguments()
             return 1
         fi
 
-        echo "Found existing java process, please choose one and hit RETURN."
+        echo "Found existing java process, please choose one and input the serial number of the process, eg : 1. Then hit ENTER."
 
         index=0
         suggest=1
@@ -807,7 +807,7 @@ active_console()
              ${TARGET_IP} \
              ${TELNET_PORT} \
              "${tempArgs[@]}" \
-             -c ${COMMAND}
+             -c "${COMMAND}"
         fi
         if [ "${BATCH_FILE}" ] ; then
         "${JAVA_HOME}/bin/java" ${ARTHAS_OPTS} ${JVM_OPTS} \
