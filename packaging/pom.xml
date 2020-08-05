@@ -4,12 +4,21 @@
     <parent>
         <groupId>com.taobao.arthas</groupId>
         <artifactId>arthas-all</artifactId>
-        <version>3.3.4-SNAPSHOT</version>
+        <version>3.3.8-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>arthas-packaging</artifactId>
     <name>arthas-packaging</name>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.taobao.arthas</groupId>
+            <artifactId>arthas-site</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
     <build>
         <finalName>arthas</finalName>
         <plugins>
@@ -41,9 +50,7 @@
                         <phase>package</phase>
                         <configuration>
                             <tasks>
-                                <zip update="true" destfile="${project.build.directory}/${project.build.finalName}.${project.packaging}"
-                                    basedir="${project.build.directory}"
-                                    includes="arthas-bin.zip">
+                                <zip update="true" destfile="${project.build.directory}/${project.build.finalName}.${project.packaging}" basedir="${project.build.directory}" includes="arthas-bin.zip">
                                 </zip>
                             </tasks>
                         </configuration>

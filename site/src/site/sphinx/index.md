@@ -19,14 +19,16 @@ Arthas 用户文档
 0. 有什么办法可以监控到JVM的实时运行状态？
 0. 怎么快速定位应用的热点，生成火焰图？
 
-`Arthas`支持JDK 6+，支持Linux/Mac/Winodws，采用命令行交互模式，同时提供丰富的 `Tab` 自动补全功能，进一步方便进行问题的定位和诊断。
+`Arthas`支持JDK 6+，支持Linux/Mac/Windows，采用命令行交互模式，同时提供丰富的 `Tab` 自动补全功能，进一步方便进行问题的定位和诊断。
 
 **如果您在使用Arthas，请让我们知道，您的使用对我们非常重要：[查看](https://github.com/alibaba/arthas/issues/111)**
 
 Contents
 --------
 
-* [招聘信息!](https://mp.weixin.qq.com/s/677GO-3kYx5ygG9rlOlfQg)
+* [应届生招聘!](https://mp.weixin.qq.com/s/VVSc_a3mLELW35lMH7rR0Q)
+* [社招信息!](https://mp.weixin.qq.com/s/677GO-3kYx5ygG9rlOlfQg)
+* [技术征文!](https://developer.aliyun.com/article/751641)
 * [English Docs](https://alibaba.github.io/arthas/en/)
 * [在线教程(推荐)](https://alibaba.github.io/arthas/arthas-tutorials?language=cn)
 * [安装](install-detail.md)
@@ -36,6 +38,7 @@ Contents
 * [命令列表](commands.md)
 * [WebConsole](web-console.md)
 * [Docker](docker.md)
+* [Arthas Spring Boot Starter](spring-boot-starter.md)
 * [用户案例](https://github.com/alibaba/arthas/issues?q=label%3Auser-case)
 * [常见问题](https://github.com/alibaba/arthas/issues?q=label%3Aquestion-answered)
 * [Fork me at GitHub](https://github.com/alibaba/arthas)
