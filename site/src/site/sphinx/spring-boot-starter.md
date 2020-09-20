@@ -18,6 +18,8 @@ Arthas Spring Boot Starter
 应用启动后，spring会启动arthas，并且attach自身进程。
 
 
+> 一键创建包含 Arthas Spring Boot Starter 的工程：[点击](http://start.aliyun.com/bootstrap.html/#!dependencies=arthas)
+
 ### 配置属性
 
 比如，通过配置tunnel server实现远程管理：
@@ -29,6 +31,7 @@ arthas.tunnel-server=ws://47.75.156.201:7777/ws
 
 全部支持的配置项：[参考](https://github.com/alibaba/arthas/blob/master/arthas-spring-boot-starter/src/main/java/com/alibaba/arthas/spring/ArthasProperties.java)
 
+参考：[Arthas Properties](arthas-properties.md)
 
 ### 查看Endpoint信息
 
